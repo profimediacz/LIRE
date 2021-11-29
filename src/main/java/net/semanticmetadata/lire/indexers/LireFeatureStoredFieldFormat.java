@@ -55,7 +55,7 @@ public final class LireFeatureStoredFieldFormat extends CompressingStoredFieldsF
      */
     public LireFeatureStoredFieldFormat() {
         // TODO: try different chunk sizes, maybe 1-2KB?
-        super("LireFeatureStoredFieldFormat", CompressionMode.FAST_DECOMPRESSION, 1 << 14, 128, 1024);
+        super("LireFeatureStoredFieldFormat", CompressionMode.FAST_DECOMPRESSION, 1 << 14, 128, 10);
         // updated for Lucene 5.2.1 ... taken from Lucene50StoredFieldsFormat, changed to FAST_DECOMPRESSION.
     }
 
